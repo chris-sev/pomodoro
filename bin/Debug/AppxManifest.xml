@@ -22,8 +22,8 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="Pomodoro Monster" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="A simple and beautiful Pomodoro Timer." ForegroundText="light" BackgroundColor="#EC2E2B" ToastCapable="true">
-        <DefaultTile ShowName="allLogos" ShortName="Pomodoro" />
+      <VisualElements DisplayName="Pomodoro on the Rocks" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="A simple and beautiful Pomodoro Timer." ForegroundText="light" BackgroundColor="#EC2E2B" ToastCapable="true">
+        <DefaultTile ShowName="allLogos" ShortName="Pomodoro on the Rocks" />
         <SplashScreen Image="images\splashscreen.png" BackgroundColor="#EC2E2B" />
       </VisualElements>
     </Application>

@@ -5,7 +5,7 @@
     <WindowsUser>Chris</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>0468142DBFB63DEEACD31562C44A3BAF98D7F8777570202B22D0B25BAD9CE4E8</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>B959F5D9C9F65250BA09C5218A92A5992EE78181981E81312C8AB9E3DE84CF69</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3ee11dec-0381-44b7-91f6-1e51b8029ca9_1.0.0.0_neutral__h37gyvpph0nvj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3ee11dec-0381-44b7-91f6-1e51b8029ca9_h37gyvpph0nvj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3ee11dec-0381-44b7-91f6-1e51b8029ca9</RegisteredPackageID>
@@ -13,56 +13,56 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Chris\Documents\wincave\Pomodoro\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Chris\documents\wincave\Pomodoro\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-06-01T18:54:15.463</Modified>
+      <Modified>2013-06-03T20:47:43.208</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\default.html">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2013-06-03T03:28:26.014</Modified>
+      <Modified>2013-06-03T23:13:37.121</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\settings.html">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\settings.html">
       <PackagePath>settings.html</PackagePath>
-      <Modified>2013-06-03T03:55:29.268</Modified>
+      <Modified>2013-06-03T23:20:59.139</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\images\logo.png">
-      <PackagePath>images\logo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-06-01T03:37:52.789</Modified>
+      <Modified>2013-06-03T15:36:55.004</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\images\smalllogo.png">
-      <PackagePath>images\smalllogo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-28T08:25:26.000</Modified>
+      <Modified>2013-06-03T15:58:25.862</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\images\splashscreen.png">
-      <PackagePath>images\splashscreen.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-06-01T03:34:56.980</Modified>
+      <Modified>2013-06-03T15:49:37.132</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\images\storelogo.png">
-      <PackagePath>images\storelogo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-28T08:25:26.000</Modified>
+      <Modified>2013-06-03T15:57:42.652</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\js\default.js">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-06-03T03:30:58.094</Modified>
+      <Modified>2013-06-03T22:53:59.907</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\js\settings.js">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\js\settings.js">
       <PackagePath>js\settings.js</PackagePath>
-      <Modified>2013-06-03T02:49:49.302</Modified>
+      <Modified>2013-06-03T23:38:57.426</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\css\default.css">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2013-06-03T03:27:24.479</Modified>
+      <Modified>2013-06-03T23:13:59.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-06-01T18:54:15.355</Modified>
+      <Modified>2013-06-03T20:47:43.135</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

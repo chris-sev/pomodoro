@@ -54,7 +54,7 @@ header {
         width: 50%;
     }
         #taskName::-ms-clear {
-            background: #73C1EB;
+            background: #ff6e6b;
             margin-right: 10px;
         }
     #progress {
@@ -79,6 +79,10 @@ header {
     #stop, #reset {
         display: none;
     }
+
+#settings {
+    border: 1px solid #930000;
+}
 
 @media screen and (-ms-view-state: fullscreen-landscape) {
 }

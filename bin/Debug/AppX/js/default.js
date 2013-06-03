@@ -1,6 +1,4 @@
-﻿// For an introduction to the Blank template, see the following documentation:
-// http://go.microsoft.com/fwlink/?LinkId=232509
-(function () {
+﻿(function () {
     "use strict";
 
     WinJS.Binding.optimizeBindingReferences = true;
@@ -27,13 +25,31 @@
 
     var countdownID;
 
-    var progressNumber = 0;
-
     // toast notifications
     var timeLeft;
-    var toastMessage;
+    var toastMessageType;
     var notifications = Windows.UI.Notifications;
-    var template = notifications.ToastTemplateType.toastText03;
+    var template = notifications.ToastTemplateType.toastText02;
+
+    // messages
+    var messageType;
+    var normalMessages = [
+        "You are a champion.",
+        "Doing amazing.",
+        "Seek the greatness in life, ignore the rest.",
+        "Change the world, one little bit.",
+        "All things are possible.",
+        "Fear nothing."
+    ];
+    var cooldownMessages = [
+
+    ];
+    var endMessages = [
+
+    ];
+    var quitMessages = [
+
+    ];
 
     // ON ACTIVATED ====================================================== 
     app.onactivated = function (args) {
@@ -66,9 +82,6 @@
                 reset.addEventListener("MSPointerDown", onPointerDown, false);
                 reset.addEventListener("MSPointerUp", onPointerUp, false);
 
-                // progress bar
-                var progress = document.getElementById("progress");
-
             }));
         }
     };
@@ -90,7 +103,6 @@
         // change the HTML to show new minutes and seconds
         minutes.innerHTML = (mins < 10 ? '0' : '') + mins;
         seconds.innerHTML = (secs < 10 ? '0' : '') + secs;
-        progress.value = progressNumber;
 
         // handle the animation
         if (mode == "normal") {
@@ -101,19 +113,17 @@
                 document.body.style.background = "#" + bgColor;
 
                 // decrement divisor
-                if (divisor > 0) {
+                if (divisor > 0)
                     divisor = divisor - 0.05;
-                }
             }
 
             // change the message at 00
             if (secs == 0) {
-                message.innerHTML = "change the message here";
+                showMessage("normal");
 
                 // show toast at every 5 min and at end
-                if (mins == 15 || mins == 10 || mins == 5 || mins == 1) {
+                if (mins == 15 || mins == 10 || mins == 5 || mins == 1)
                     showToast(mins, "Keep it up.");
-                }
             }
         }
 
@@ -122,25 +132,25 @@
             if (mode == "normal") {
                 // go to cooldown
                 mode = "cooldown";
-                if (session == 5 || session == 10 || session == 15 || session == 20) {
+                if (session == 5 || session == 10 || session == 15 || session == 20)
                     bigTime = 1800;
-                } else {
+                else 
                     bigTime = 300;
-                }
+                
                 divisor = 30;
 
                 // change background color to normal
                 document.body.style.background = "#" + cooldownColor;
 
                 // change message
-                message.innerHTML = "cooling down";
+                showMessage("cooldown");
             } else {
+                showToast(0);
                 resetTimer();
             }
         } else {
             // decrement
             bigTime = bigTime - 1;
-            progressNumber = progressNumber + 1;
         }
 
     }
@@ -154,7 +164,7 @@
         countdownID = setInterval(function () { counter(); }, 1);
 
         // show message
-        message.innerHTML = "slow and steady wins something";
+        showMessage("normal");
 
         // show stop button
         start.style.display = "none";
@@ -164,7 +174,7 @@
 
     function stopTimer(eventInfo) {
         // change message
-        message.innerHTML = "why are you such a quitter?";
+        showMessage("quit");
 
         // stop timer
         clearInterval(countdownID);
@@ -191,7 +201,7 @@
         document.body.style.background = "#" + color;
 
         // change message
-        message.innerHTML = "fuck yes";
+        message.innerHTML = "Do Something Great";
 
         // show start button
         start.style.display = "block";
@@ -202,7 +212,7 @@
         clearInterval(countdownID);
     }
 
-    function showToast(timeLeft, toastMessage) {
+    function showToast(timeLeft, toastMessageType) {
         // get task
         task = taskName.value;
 
@@ -210,23 +220,46 @@
 
         // show notification
         var toastTextElements = toastXml.getElementsByTagName("text");
-        toastTextElements[0].appendChild(toastXml.createTextNode(task));
+        if (task)
+            toastTextElements[0].appendChild(toastXml.createTextNode(task));
+        else
+            toastTextElements[0].appendChild(toastXml.createTextNode("Getting Things Done"));
+        
+        
         if (timeLeft == 0) {
-            toastTextElements[0].appendChild(toastXml.createTextNode("You're Done!"));
-            toastTextElements[1].appendChild(toastXml.createTextNode("Great work."));
+            toastTextElements[1].appendChild(toastXml.createTextNode("You're Done!"));
         } else {
-            if (timeLeft == 1) {
-                toastTextElements[0].appendChild(toastXml.createTextNode(timeLeft + " minute left!"));
-            } else {
-                toastTextElements[0].appendChild(toastXml.createTextNode(timeLeft + " minutes left!"));
-            }
-            toastTextElements[1].appendChild(toastXml.createTextNode("Getting close."));
+            if (timeLeft == 1)
+                toastTextElements[1].appendChild(toastXml.createTextNode(timeLeft + " minute left!"));
+            else
+                toastTextElements[1].appendChild(toastXml.createTextNode(timeLeft + " minutes left!"));
+            
         }
         
         // show toast
         var toast = new notifications.ToastNotification(toastXml);
         var toastNotifier = notifications.ToastNotificationManager.createToastNotifier();
         toastNotifier.show(toast);
+    }
+
+    function showMessage(messageType) {
+        switch (messageType) {
+            case "normal":
+                message.innerHTML = normalMessages[Math.floor(Math.random() * normalMessages.length)];
+                break;
+
+            case "cooldown":
+                message.innerHTML = cooldownMessages[Math.floor(Math.random() * cooldownMessages.length)];
+                break;
+
+            case "end":
+                message.innerHTML = endMessages[Math.floor(Math.random() * endMessages.length)];
+                break;
+
+            case "quit":
+                message.innerHTML = quitMessages[Math.floor(Math.random() * quitMessages.length)];
+                break;
+        }
     }
 
     // ANIMATIONS ==========================================================

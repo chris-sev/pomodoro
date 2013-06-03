@@ -37,7 +37,7 @@
 
         <div id="taskInput">
             <input type="text" id="taskName" placeholder="What are you going to accomplish?" />
-            <progress id="progress" max="1499" value="0" ></progress>
+            <!--<progress id="progress" value="0" max="1499"></progress>-->
         </div>
 
         <div id="buttons">
@@ -59,9 +59,7 @@
         </div>
     </div>
 
-    <div id="contentHost"></div>
-
-    <div id="appBar" data-win-control="WinJS.UI.AppBar" data-win-options"">
+    <div id="appBar" data-win-control="WinJS.UI.AppBar" data-win-options="">
         <button
             data-win-control="WinJS.UI.AppBarCommand"
             data-win-options="{id:'cmdAdd',label:'Add',icon:'add',section:'global',tooltip:'Add Item'}">

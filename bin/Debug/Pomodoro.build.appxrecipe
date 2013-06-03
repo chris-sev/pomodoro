@@ -7,44 +7,44 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Chris\Documents\wincave\Pomodoro\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Chris\documents\wincave\Pomodoro\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\default.html">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\default.html">
       <PackagePath>default.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\settings.html">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\settings.html">
       <PackagePath>settings.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\images\logo.png">
-      <PackagePath>images\logo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\images\smalllogo.png">
-      <PackagePath>images\smalllogo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\images\splashscreen.png">
-      <PackagePath>images\splashscreen.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\images\storelogo.png">
-      <PackagePath>images\storelogo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\js\default.js">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\js\settings.js">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\js\settings.js">
       <PackagePath>js\settings.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\css\default.css">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Chris\Documents\wincave\Pomodoro\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

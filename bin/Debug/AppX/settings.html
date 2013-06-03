@@ -16,7 +16,7 @@
         <div class="win-content">
             <div class="win-settings-section">
                     <label>Notifcations</label>
-                    <div data-win-control="WinJS.UI.ToggleSwitch"></div>
+                    <div id="notificationsToggle" data-win-control="WinJS.UI.ToggleSwitch"></div>
 
                     <label for="shortRest">Short Rest <span>(default: 5 minutes)</span></label>
                     <input id="shortRest" name="shortRest" type="range" min="1" max="10" value="5" />
@@ -24,14 +24,14 @@
                     <label for="longRest">Long Rest <span>(Default: 30 minutes)</span></label>
                     <input id="longRest" name="longRest" type="range" min="10" max="60" value="30" />
 
-                <select>
-    <option>Apple</option>
-    <option>Banana</option>
-    <option>Grape</option>
-    <option>Orange</option>
-    <option>Pear</option>
-    <option>Watermelon</option>
-</select>
+                    <select>
+                        <option>Apple</option>
+                        <option>Banana</option>
+                        <option>Grape</option>
+                        <option>Orange</option>
+                        <option>Pear</option>
+                        <option>Watermelon</option>
+                    </select>
 
             </div>
         </div>
