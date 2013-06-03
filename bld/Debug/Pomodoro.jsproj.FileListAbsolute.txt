@@ -1,0 +1,13 @@
+c:\users\chris\documents\wincave\Pomodoro\bin\Debug\resources.pri
+c:\users\chris\documents\wincave\Pomodoro\bin\Debug\AppxManifest.xml
+c:\users\chris\documents\wincave\Pomodoro\bin\Debug\Pomodoro.build.appxrecipe
+c:\users\chris\documents\wincave\Pomodoro\bld\Debug\priconfig.xml
+c:\users\chris\documents\wincave\Pomodoro\bld\Debug\layout.resfiles
+c:\users\chris\documents\wincave\Pomodoro\bld\Debug\resources.resfiles
+c:\users\chris\documents\wincave\Pomodoro\bld\Debug\pri.resfiles
+c:\users\chris\documents\wincave\Pomodoro\bld\Debug\LanguageQualifiers.txt
+c:\users\chris\documents\wincave\Pomodoro\bld\Debug\ProjectArchitectures.txt
+C:\Users\Chris\documents\wincave\Pomodoro\bld\Debug\priconfig.xml.intermediate
+C:\Users\Chris\documents\wincave\Pomodoro\bld\Debug\layout.resfiles.intermediate
+C:\Users\Chris\documents\wincave\Pomodoro\bld\Debug\resources.resfiles.intermediate
+C:\Users\Chris\documents\wincave\Pomodoro\bld\Debug\pri.resfiles.intermediate
