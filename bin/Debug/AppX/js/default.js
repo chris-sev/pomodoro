@@ -5,6 +5,7 @@
 
     var app = WinJS.Application;
     var activation = Windows.ApplicationModel.Activation;
+    var appData = Windows.Storage.ApplicationData.current.roamingSettings;
 
     // register variables
     var bigTime = 1499; // time in seconds
@@ -39,16 +40,37 @@
         "Seek the greatness in life, ignore the rest.",
         "Change the world, one little bit.",
         "All things are possible.",
-        "Fear nothing."
+        "Fear nothing.",
+        "Carpe diem.",
+        "Do a little more every day than you think you can.",
+        "Right on track.",
+        "The harder you work, the luckier you get.",
+        "You are inspiring.",
+        "Stay strong.",
+        "You are my hero.",
+        "No rest for the wicked.",
+        "You're on fire."
     ];
     var cooldownMessages = [
-
+        "You earned a break.",
+        "Don't go too far.",
+        "Success!",
+        "Take a deep breath.",
+        "What's your next goal?",
+        "Rest is good.",
+        "Have a snack.",
+        "Stretchhhhhh"
     ];
     var endMessages = [
-
+        "Let's make magic.",
+        "Change the world.",
+        "Let's get started.",
+        "You're gonna do great."
     ];
     var quitMessages = [
-
+        "Don't stop.",
+        "Did you finish?",
+        "You'll get it next time."
     ];
 
     // ON ACTIVATED ====================================================== 
@@ -116,14 +138,20 @@
                 if (divisor > 0)
                     divisor = divisor - 0.05;
             }
+        }
 
-            // change the message at 00
-            if (secs == 0) {
+        // change the message at 00
+        if (secs == 0) {
+            if (mode == "normal") {
                 showMessage("normal");
 
                 // show toast at every 5 min and at end
-                if (mins == 15 || mins == 10 || mins == 5 || mins == 1)
-                    showToast(mins, "Keep it up.");
+                if (appData.values["notifications"] == "on")
+                    if (mins == 15 || mins == 10 || mins == 5 || mins == 1)
+                        showToast(mins, "Keep it up.");
+
+            } else {
+                showMessage("cooldown");
             }
         }
 
@@ -132,11 +160,20 @@
             if (mode == "normal") {
                 // go to cooldown
                 mode = "cooldown";
-                if (session == 5 || session == 10 || session == 15 || session == 20)
-                    bigTime = 1800;
-                else 
-                    bigTime = 300;
                 
+
+                if (session == 5 || session == 10 || session == 15 || session == 20) {
+                    if (appData.values["longRest"])
+                        bigTime = appData.values["longRest"] * 60;
+                    else
+                        bigTime = 1800;
+                } else {
+                    if (appData.values["shortRest"])
+                        bigTime = appData.values["shortRest"] * 60;
+                    else
+                        bigTime = 300;
+                }
+
                 divisor = 30;
 
                 // change background color to normal
@@ -145,7 +182,9 @@
                 // change message
                 showMessage("cooldown");
             } else {
-                showToast(0);
+                if (appData.values["notifications"] == "on")
+                    showToast(0);
+
                 resetTimer();
             }
         } else {
@@ -158,6 +197,7 @@
     // ACTIONS =============================================================
     function startTimer(eventInfo) {
         bgColor = color;
+        bigTime = 1499; // get from app settings
         divisor = 300;
 
         // start the timer
@@ -201,7 +241,7 @@
         document.body.style.background = "#" + color;
 
         // change message
-        message.innerHTML = "Do Something Great";
+        showMessage("end");
 
         // show start button
         start.style.display = "block";

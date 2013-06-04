@@ -3,7 +3,7 @@
   <Identity Name="3ee11dec-0381-44b7-91f6-1e51b8029ca9" Version="1.0.0.0" Publisher="CN=Chris" />
   <Properties>
     <DisplayName>Pomodoro</DisplayName>
-    <PublisherDisplayName>Chris</PublisherDisplayName>
+    <PublisherDisplayName>Scotch Development</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>

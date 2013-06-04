@@ -5,7 +5,7 @@
     <WindowsUser>Chris</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>B959F5D9C9F65250BA09C5218A92A5992EE78181981E81312C8AB9E3DE84CF69</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>40A3129B6BBC639A8F130EEC517EAAA798B57EC42FBC5F2B931D00913D9131F4</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3ee11dec-0381-44b7-91f6-1e51b8029ca9_1.0.0.0_neutral__h37gyvpph0nvj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3ee11dec-0381-44b7-91f6-1e51b8029ca9_h37gyvpph0nvj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3ee11dec-0381-44b7-91f6-1e51b8029ca9</RegisteredPackageID>
@@ -16,22 +16,22 @@
     <AppXManifest Include="C:\Users\Chris\documents\wincave\Pomodoro\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-06-03T20:47:43.208</Modified>
+      <Modified>2013-06-04T19:18:15.595</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2013-06-03T23:13:37.121</Modified>
+      <Modified>2013-06-04T17:48:59.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\settings.html">
       <PackagePath>settings.html</PackagePath>
-      <Modified>2013-06-03T23:20:59.139</Modified>
+      <Modified>2013-06-04T17:28:51.349</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-06-03T15:36:55.004</Modified>
+      <Modified>2013-06-04T17:44:57.863</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\images\smalllogo.scale-100.png">
       <PackagePath>images\smalllogo.scale-100.png</PackagePath>
@@ -50,19 +50,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2013-06-03T22:53:59.907</Modified>
+      <Modified>2013-06-04T19:19:38.254</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\js\settings.js">
       <PackagePath>js\settings.js</PackagePath>
-      <Modified>2013-06-03T23:38:57.426</Modified>
+      <Modified>2013-06-04T17:03:49.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2013-06-03T23:13:59.965</Modified>
+      <Modified>2013-06-04T17:48:59.270</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Chris\documents\wincave\Pomodoro\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-06-03T20:47:43.135</Modified>
+      <Modified>2013-06-04T19:18:15.474</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
